@@ -1,0 +1,98 @@
+body {
+    background: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #6C9C73;
+    height: 16vw;
+    width: 80vw;
+    text-align: center;
+    display: grid;
+    margin: auto;
+    grid-template-areas:    "title title title"
+                            "label searchbar button"
+                            "hr hr hr";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+header hr {
+    border: 1px solid #1A3620;
+    width: 99%;
+    grid-row: hr;
+    grid-column: hr
+}
+
+h1 {
+    grid-row: title;
+    grid-column: title;
+    justify-self: center;
+    align-self: center;
+}
+
+header label {
+    grid-row: label;
+    grid-column: label;
+    justify-self: right;
+    align-self: center;
+    margin: 10px;
+    padding: 2px;
+}
+
+header input {
+    grid-row: searchbar;
+    grid-column: searchbar;
+    align-self: center;
+    height: 2vw;
+    padding: 5px;
+    margin: 5px;
+}
+
+header button {
+    grid-row: button;
+    grid-column: button;
+    align-self: center;
+    height: 3vw;
+    margin: 5px;
+}
+
+main {
+    background-color: #6C9C73;
+    width: 80vw;
+    text-align: center;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+article {
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    background-color: #6C9C73;
+    display: grid;
+    height: 5vw;
+    width: 80vw;
+    text-align: left;
+    margin: 0 auto;
+    justify-self: center;
+    align-content: center;
+}
+
+footer p {
+    margin: 5px
+}
+
+footer hr {
+    border: 1px solid #1A3620;
+    width: 99%;
+}
